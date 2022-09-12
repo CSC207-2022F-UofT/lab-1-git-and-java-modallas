@@ -25,9 +25,12 @@ public class IntroLabTest {
         assertEquals(expected, actual);
     }
 
-    /* TODO: Write a test case for the method you wrote in IntroLab.
-     *       If done properly, you should be able to run IntroLabTest and see
-     *       the test results.
-     * As a reference, we've included testExampleStudent above.
-     */
+   @Test(timeout = 100)
+    public void testSchnitzi() {
+        String expected = "Hi! My name is Dallas! " +
+                "I like dogs more than cats! Give me an A+";
+        String actual = IntroLab.Schnitzi();
+        assertEquals(expected, actual);
+    }
+
 }
